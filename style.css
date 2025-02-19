@@ -25,7 +25,7 @@ body {
 }
 
 .nav {
-    max-width: 85vw;
+    max-width: 87vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -225,10 +225,43 @@ p span{
     height: 40vh;
     background-color: white;
     border-radius: 12px;
-    text-align: center;
-    background-image: linear-gradient(180deg,#fdb687, #6765e8e8);
+    background-image: linear-gradient(180deg,#fdb68792, #6765e87d);
+    padding: 25px;
 }
 
+.box{
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-size: 70%;
+    border-radius: 7px;
+}
+.icon-conte{
+    display: flex;
+    gap: 10px;
+    padding: 0 0 10px;
+}
+.brave{ background-image: url(./assets/brave-browser-icon.svg);}
+.chrome{ background-image: url(./assets/google-chrome-icon.svg);}
+.firefox{background-image: url(./assets/firefox-browser-icon.svg);}
+.google{background-image: url(./assets/google-color-icon.svg);}
+.duckduck{background-image: url(./assets/duckduckgo-icon.svg);}
+
+.ele-conte{
+    padding : 0 25px;
+}
+.gr-element h3{
+    font-size: 1.87rem;
+    padding: 10px 0;
+    font-family:  "Poppins", serif;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.gr-element p{
+    font-size: 20px;
+}
 
 @media (max-width:760px) {
     .header {
@@ -242,7 +275,10 @@ p span{
         display: none;
     }
 
-    .nav-item2 input,button{
+    .nav-item2 input{
+        display: none;
+    }
+    .nav-item2 button{
         display: none;
     }
     .nav-item2 img{
@@ -290,12 +326,15 @@ p span{
     .grid{
         grid-template-columns: 1fr;
     }
+    .gr-element{
+        height: 35vh;
+    }
     
 }
 
-@media (min-width:761px) and (max-width: 1050px) {
+@media (min-width:761px) and (max-width: 1450px) {
     .nav {
-        max-width: 95vw;
+        max-width: 92vw;
     }
 
     .nav-item1 ul {
@@ -317,5 +356,10 @@ p span{
     .flex input::placeholder{
         font-size: 12px;
     }
-   
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .gr-element{
+        height: 30vh;
+    }
 }
