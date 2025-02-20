@@ -147,7 +147,7 @@ body {
     background-color: white;
     border-radius: 12px;
     text-align: center;
-    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.352), rgba(66, 66, 248, 0.812));
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.251), rgba(66, 66, 248, 0.547));
 
 }
 
@@ -215,21 +215,24 @@ p span{
 }
 .grid{
     max-width: 90%;
-    height: 35vh;
+    min-height: 35vh;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
 }
 .gr-element{
-    height: 40vh;
+    height: 100%;
     background-color: white;
     border-radius: 12px;
     background-image: linear-gradient(180deg,#fdb68792, #6765e87d);
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.box{
+.img-box{
     width: 45px;
     height: 45px;
     background-repeat: no-repeat;
@@ -241,7 +244,7 @@ p span{
 .icon-conte{
     display: flex;
     gap: 10px;
-    padding: 0 0 10px;
+    padding: 0 0 3px;
 }
 .brave{ background-image: url(./assets/brave-browser-icon.svg);}
 .chrome{ background-image: url(./assets/google-chrome-icon.svg);}
@@ -249,11 +252,8 @@ p span{
 .google{background-image: url(./assets/google-color-icon.svg);}
 .duckduck{background-image: url(./assets/duckduckgo-icon.svg);}
 
-.ele-conte{
-    padding : 0 25px;
-}
 .gr-element h3{
-    font-size: 1.87rem;
+    font-size: 1.67rem;
     padding: 10px 0;
     font-family:  "Poppins", serif;
     font-weight: 600;
@@ -261,6 +261,15 @@ p span{
 }
 .gr-element p{
     font-size: 20px;
+    padding: 0 0 10px
+}
+.gr-element button{
+    width: 190px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color:#007bff;
 }
 
 @media (max-width:760px) {
@@ -327,7 +336,10 @@ p span{
         grid-template-columns: 1fr;
     }
     .gr-element{
-        height: 35vh;
+        height: 30vh;
+    }
+    .gr-element h3{
+        font-size: 1.4rem;
     }
     
 }
