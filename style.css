@@ -336,7 +336,7 @@ p span{
         grid-template-columns: 1fr;
     }
     .gr-element{
-        height: 30vh;
+        min-height: 30vh;
     }
     .gr-element h3{
         font-size: 1.4rem;
@@ -372,6 +372,6 @@ p span{
         grid-template-columns: 1fr 1fr;
     }
     .gr-element{
-        height: 30vh;
+        min-height: 30vh;
     }
 }
