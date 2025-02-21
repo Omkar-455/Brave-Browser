@@ -104,7 +104,7 @@ body {
     font-size: 7.4vw;
     color: #333;
     padding-bottom: 3.5vw;
-    line-height: 0.9;
+    line-height: 1;
     font-family: "Roboto Slab", serif;
     font-weight: 600;
 }
@@ -295,6 +295,32 @@ p span {
     background-color: #007bff;
 }
 
+.footer{
+    max-width: 90vw;
+    margin: auto;
+    min-height: 60vh;
+}
+.footer h3{
+    padding: 0 2px 15px;
+    font-size: 1.7rem;
+    font-family: "Ubuntu", sans-serif;
+}
+.faq{
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    font-family:  "Poppins", serif;
+    font-weight: 600;
+}
+.Ques{
+    border: 1.5px solid gray;
+    padding:  20px 15px;
+}
+.footer p{
+    padding: 30px 2px 15px;
+    font-size: 18px;
+    font-family:  "Poppins", serif;
+}
 
 
 @media (max-width:760px) {
